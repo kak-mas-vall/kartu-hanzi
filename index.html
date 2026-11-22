@@ -1,0 +1,181 @@
+<!doctype html><html lang="id"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kartu Hanzi · Latihan Mandarin</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f5f3ec;color:#222f29;font:16px "DM Sans",system-ui,sans-serif}header{border-bottom:1px solid #c9cbbf;padding:16px 6%;display:flex;align-items:center;justify-content:space-between}strong{font-size:20px}em{background:#b43d2d;color:white;padding:5px 8px;border-radius:5px;font-style:normal}button,select{font:inherit;color:inherit;cursor:pointer;border:1px solid #bbbfb4;background:#fffdf7;border-radius:9px;padding:10px 16px}button:hover{filter:brightness(.94)}main{max-width:820px;margin:4vh auto;padding:0 20px}h1{font:normal clamp(36px,6vw,58px) Georgia,serif;letter-spacing:-2px;margin:0 0 18px}.row,footer{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.stage{position:relative;display:grid;place-items:center;align-content:center;gap:12px;background:#204f41;color:#fff9e7;min-height:clamp(280px,43vh,560px);border-radius:20px;margin:16px 0;box-shadow:0 5px #bed0bb;overflow:hidden}.stage:before,.stage:after{content:"";position:absolute;pointer-events:none;width:240px;height:240px;border:1px solid #78978155;transform:rotate(45deg)}.stage:before{left:-190px;top:-80px}.stage:after{right:-170px;bottom:-125px}.stage small{position:absolute;top:20px;left:22px;letter-spacing:.12em}.word{background:none;border:0;color:inherit;font:clamp(80px,13vw,148px) "KaiTi","Noto Serif CJK SC",serif;padding:0 12px}.sound{background:#ffffff12;border-color:#8aa497;color:white}.answer{font:clamp(38px,7vw,72px) Georgia,serif;text-align:center}.meaning{text-align:center;padding:0 15px}.primary{background:#ae3b2d;color:white;border-color:#ae3b2d}footer{margin-top:22px}progress{width:100%;height:6px;accent-color:#226449}#status{min-height:1.5em;color:#823427}body.kelas main{max-width:1100px}body.kelas .stage{min-height:52vh}[hidden]{display:none!important}@media(max-width:480px){header{padding:12px}main{padding:0 14px}button,select{padding:10px}.row{gap:6px}}
+
+body{background-color:#f6f0e2;background-image:repeating-linear-gradient(0deg,transparent 0 4px,#735c3305 5px);color:#35291f}
+header{background:#fcf7eb;border-color:#d6c9ae}header em{border:3px double #fff0cb;border-radius:3px;background:#962f27;font-family:serif}
+h1{color:#592c27}button,select{border-color:#c5b89e;background:#fffbf1}
+.stage{isolation:isolate;background:radial-gradient(ellipse at 78% 15%,#9c4439,transparent 56%),linear-gradient(145deg,#762e2c,#481e27);border:5px double #ccaa73;border-radius:8px;box-shadow:3px 5px 0 #bca98a;color:#fff3d6}
+.stage:before,.stage:after{border:0;transform:none;pointer-events:none;z-index:-1}
+.stage:before{inset:auto 0 0;width:100%;height:47%;background:#361f29;opacity:.55;clip-path:polygon(0 45%,7% 31%,15% 55%,24% 42%,34% 72%,43% 62%,51% 85%,63% 69%,72% 77%,81% 43%,87% 50%,95% 22%,100% 30%,100% 100%,0 100%)}
+.stage:after{top:14%;right:8%;left:auto;bottom:auto;width:clamp(40px,8vw,74px);height:auto;aspect-ratio:1;border-radius:50%;background:#e0aa7180}
+.stage small{color:#f6d7aa}.word{background:transparent}.primary{background:#8c302a;color:#fff9e8}.sound{background:#491f28;color:#fff3d6;border-color:#c89c78}.stage .answer{color:#ffdf9a}progress{accent-color:#96392c}.stage .meaning{font-size:1.15rem}button:focus-visible,select:focus-visible{outline:3px solid #e6a634;outline-offset:3px}#board{display:grid;grid-template-columns:repeat(auto-fill,minmax(62px,1fr));gap:8px;margin:14px 0}.tile{aspect-ratio:3/4;background:repeating-linear-gradient(45deg,transparent 0 11px,#ffffff08 11px 12px),#782d30;color:#ffe5ac;border:4px double #d6b07c;font:600 20px Georgia,serif}.tile:disabled{opacity:.33}#pick{width:min(90vw,490px);text-align:center;padding:48px 22px 26px;background:#fff5df;color:#491e23;border:5px double #ac8854;border-radius:12px}#pick::backdrop{background:#20121baf}#pickClose{position:absolute;right:8px;top:8px}#pickedWord{font:clamp(60px,13vw,108px) serif}#pickedAnswer{min-height:1.5em;font-size:1.25rem}#practice{margin-top:12px}#board{grid-template-columns:repeat(auto-fill,minmax(86px,1fr))}.tile{padding:4px;white-space:nowrap;font:500 clamp(20px,2.6vw,25px) "KaiTi","Noto Serif CJK SC",serif;aspect-ratio:1.35}.view3d{perspective:1000px;margin:6px 0 20px}.turn{display:grid;transform-style:preserve-3d;transition:transform .58s cubic-bezier(.35,.05,.23,1)}.turn.turned{transform:rotateY(180deg)}.face{grid-area:1/1;min-height:215px;display:grid;align-content:center;justify-items:center;gap:12px;padding:14px;border:4px double #bd965c;border-radius:9px;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fffaed}.reverse{transform:rotateY(180deg);background:#752d30;color:#fff5db}.reverse #pickedPinyin{font:clamp(36px,7vw,58px) Georgia,serif}#pickedMeaning{font-size:1.2rem}@media(prefers-reduced-motion:reduce){.turn{transition:none}}.randomFace{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;margin:12px 0}.turn.resetFace{transition:none}body{isolation:isolate}body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjQ2MCIgdmlld0JveD0iMCAwIDE2MDAgNDYwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImZvZyIgeDI9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNzY4OTdiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYmJjMmFiIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYjk5NDY4IiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9Ii41NSI+PHBhdGggZD0iTS00MCAxMDBoMTI1cTE4IDAgMTUtMTJ0LTIyLTRxLTktMjctMzEtMTF0LTUgMjVNLTEwIDExNGgxNDBxMzUgMCAzMC0xOHQtMjUtOE0xNDMwIDcwaDkwcTE4IDAgMTUtMTJ0LTIyLTRxLTktMjctMzEtMTF0LTUgMjVtLTY4IDE2aDE3MHEzMCAwIDI1LTE4dC0yNC04Ii8+PC9nPjxjaXJjbGUgY3g9IjE0MDAiIGN5PSIxNDciIHI9IjM0IiBmaWxsPSIjYzc3NzVkIiBvcGFjaXR5PSIuNDgiLz48cGF0aCBkPSJNMCAyMTVxNjUtMzYgMTI1LTg1bDI4IDE2IDQxLTIyIDEwNSAxMDEgNDktMjQgMTU1IDkzIDc4LTMzIDE0OSA2NyAxNDAtNTggNzggMjIgMTM5LTEwMiA0OSAxOCAxMDgtODQgNDQgMjUgNzUtNzggMzcgMzIgNTgtMzkgMTQyIDEwMHYyOTZIMFoiIGZpbGw9InVybCgjZm9nKSIgb3BhY2l0eT0iLjQ0Ii8+PHBhdGggZD0iTTAgMTg3bDY1LTU0IDI3IDExIDM5LTM3IDk3IDk4IDM3LTE2IDExMSA4MyAxNTUgNTIgMTE2IDM5IDE0NS0xOCAxNTggOCAxMDctNjYgNTkgMTIgODUtNjcgMzkgMTAgMTE3LTEyMyAzNCAxNCA1NC03MCA5OCA2OHYzMjlIMFoiIGZpbGw9IiM3MDg0NzciIG9wYWNpdHk9Ii40MCIvPjxwYXRoIGQ9Ik0wIDI3NXE5Mi01OSAxNDMtMTA0bDM5IDEzIDYzIDYzIDQ5LTEyIDExMSA4NSAxNTggNzNxLTE2Mi0zOS0yNTktNDJUMCAzODZabTE2MDAtMTAyLTgyIDcwLTUwLTEyLTc1IDgxLTM2LTYtMTE0IDYxcTE0Ny0yNiAyMTgtMTh0MTM5IDIyWiIgZmlsbD0iIzUzNmI2MCIgb3BhY2l0eT0iLjUyIi8+PC9zdmc+');background-repeat:no-repeat;background-size:100% clamp(250px,55vh,560px);background-position:center bottom}@media(max-width:600px){body::before{background-size:175% 37vh;background-position:65% bottom}}</style><header><strong><em lang="zh">字</em> Kartu Hanzi</strong><button id="kelas">Mode kelas</button></header><main><h1>Latihan Mandarin</h1><div class="row"><select id="mode" aria-label="Mode latihan"><option value="pick" selected>Pilih kartu</option><option value="single">Latihan acak</option></select></div><section id="practice" hidden><span id="count"></span><div class="view3d"><div id="randomTurn" class="turn"><section id="randomFront" class="stage randomFace"><small>HANZI</small><button class="word" id="word" lang="zh-CN" aria-label="Balik kartu"></button><button class="sound" id="sound" aria-label="Putar pelafalan Mandarin" title="Putar pelafalan">&#9835;</button></section><section id="randomReverse" class="stage randomFace reverse" inert><small id="label"></small><div class="answer" lang="zh-Latn" id="pin"></div><div class="meaning" id="arti"></div><button class="sound" id="backSound" aria-label="Putar pelafalan Mandarin" title="Putar pelafalan">&#9835;</button></section></div></div><progress id="bar" aria-label="Progres sesi"></progress><footer><button id="back">Sebelumnya</button><button id="mark" hidden>Ulangi</button><button id="next" class="primary">Balik kartu</button></footer><p id="status" role="status"></p></section><section id="table"><p id="pickedCount"></p><div id="board"></div><button id="resetBoard" hidden>Acak & main lagi</button></section><dialog id="pick"><button id="pickClose" aria-label="Tutup kartu">&times;</button><div class="view3d"><div class="turn" id="turn"><div class="face front" id="front"><div id="pickedWord" lang="zh-CN"></div><button id="pickSound" aria-label="Putar pelafalan Mandarin">&#9835;</button></div><div class="face reverse" id="reverse" inert><div id="pickedPinyin" lang="zh-Latn"></div><div id="pickedMeaning"></div></div></div></div><button id="pickAction" class="primary">Balik kartu</button><div id="pickStatus" role="status"></div></dialog></main><script>
+const cards=`你|nǐ|Kamu
+好|hǎo|Baik, bagus
+你好|nǐ hǎo|Halo
+您|nín|Anda (sopan)
+你们|nǐmen|Kalian
+对不起|duìbuqǐ|Maaf
+没关系|méi guānxi|Tidak apa-apa
+咖啡|kāfēi|Kopi
+可乐|kělè|Minuman kola
+烤鸭|kǎoyā|Bebek panggang
+火锅|huǒguō|Hotpot
+地图|dìtú|Peta
+飞机|fēijī|Pesawat terbang
+毛笔|máobǐ|Kuas kaligrafi
+耳机|ěrjī|Headphone atau earphone
+耳|ěr|Telinga
+谢谢|xièxie|Terima kasih
+不谢|bú xiè|Sama-sama
+不客气|bú kèqi|Sama-sama
+再见|zàijiàn|Sampai jumpa
+冰箱|bīngxiāng|Kulkas
+鸡蛋|jīdàn|Telur ayam
+司机|sījī|Sopir
+足球|zúqiú|Sepak bola, bola sepak
+机场|jīchǎng|Bandara
+爬山|pá shān|Mendaki gunung
+手表|shǒubiǎo|Jam tangan
+熊猫|xióngmāo|Panda
+叫|jiào|Bernama, memanggil
+什么|shénme|Apa
+名字|míngzi|Nama
+我|wǒ|Saya, aku
+是|shì|Adalah
+老师|lǎoshī|Guru
+吗|ma|Partikel tanya untuk pertanyaan ya atau tidak
+学生|xuésheng|Murid, pelajar
+人|rén|Orang
+中国|Zhōngguó|Tiongkok
+美国|Měiguó|Amerika Serikat
+印尼|Yìnní|Indonesia
+韩国|Hánguó|Korea Selatan
+越南|Yuènán|Vietnam
+日本|Rìběn|Jepang
+进攻|jìngōng|Serang!
+集合|jíhé|Berkumpul!
+撤退|chètuì|Mundur!
+防守|fángshǒu|Bertahan!
+支援|zhīyuán|Bantu tim!
+小心|xiǎoxīn|Hati-hati!
+等我|děng wǒ|Tunggu aku!
+看我|kàn wǒ|Lihat aku!
+一波|yì bō|Langsung end! (Saat ada peluang mengakhiri game.)
+没大|méi dà|Ulti belum siap.
+跟我|gēn wǒ|Ikuti aku!
+能打|néng dǎ|Bisa kita lawan!
+没闪|méi shǎn|Flash belum siap.
+慢慢打|mànman dǎ|Main pelan-pelan.`.split('\n').map(line=>line.split('|'));
+const el=id=>document.getElementById(id), synth=window.speechSynthesis;
+let queue=cards,index=0,flipped=false,marks=new Set();
+function shuffled(list){
+  const result = [...list];
+  for(let i=result.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [result[i],result[j]]=[result[j],result[i]];
+  }
+  return result;
+}
+function start(list){queue=shuffled(list);index=0;marks=new Set();show(false)}
+function show(side){synth?.cancel();flipped=side;const card=queue[index],done=!card;
+el('label').textContent=done?'SESI SELESAI':side?'PINYIN & ARTI':'HANZI';
+el('count').textContent=Math.min(index+1,queue.length)+' / '+queue.length;
+el('bar').max=queue.length;el('bar').value=index;
+const reverse=side||done;
+const turn=el('randomTurn');
+turn.classList.toggle('resetFace',!side);
+turn.classList.toggle('turned',reverse);
+el('randomFront').inert=reverse;
+el('randomReverse').inert=!reverse;
+el('backSound').hidden=done;
+el('word').textContent=card?.[0]||'';
+el('pin').textContent=done?'Sesi selesai':side?card[1]:'';
+el('arti').textContent=done?marks.size+' kartu ditandai untuk diulangi.':side?card[2]:'';
+el('sound').hidden=done;el('mark').hidden=done||!side;
+el('mark').textContent=marks.has(card)?'Batalkan tanda':'Tandai ulangi';
+el('next').textContent=done?(marks.size?'Latih kartu bertanda':'Mulai lagi'):side?(index+1===queue.length?'Selesaikan':'Berikutnya'):'Balik kartu';
+el('back').disabled=index===0;el('status').textContent=''}
+
+el('word').onclick=()=>show(true);el('back').onclick=()=>{index--;show(false)};
+el('mark').onclick=()=>{let c=queue[index];if(marks.has(c))marks.delete(c);else marks.add(c);show(true)};
+el('next').onclick=()=>{if(index===queue.length)return start(marks.size?[...marks]:cards);if(flipped){index++;show(false)}else show(true)};
+const audioError=target=>target.textContent='Audio Mandarin belum tersedia. Aktifkan suara Mandarin di pengaturan perangkat.';
+synth?.getVoices();el('sound').onclick=()=>speak(queue[index][0],el('status'));el('backSound').onclick=el('sound').onclick;function speak(word,target){if(!synth)return audioError(target);synth.cancel();const msg=new SpeechSynthesisUtterance(word);msg.lang='zh-CN';msg.rate=.85;const voice=synth.getVoices().find(v=>/^(zh[-_](CN|Hans)|cmn)/i.test(v.lang));if(voice)msg.voice=voice;msg.onerror=e=>{if(!['interrupted','canceled'].includes(e.error))audioError(target)};synth.speak(msg)};
+const mode = el('mode');
+const board = el('board');
+const dialog = el('pick');
+const completed = new Set();
+let layout = [], chosen, answered;
+function resetBoard(){
+  completed.clear();
+  layout = shuffled(cards);
+  board.replaceChildren();
+  layout.forEach((card, position)=>{
+    const tile=document.createElement('button');
+    tile.className='tile';
+    tile.textContent=card[0];
+    tile.lang='zh-CN';
+    tile.setAttribute('aria-label','Pilih kartu '+card[0]);
+    tile.onclick=()=>{
+      chosen=position;
+      answered=false;
+      el('pickedWord').textContent=card[0];
+      el('turn').classList.remove('turned');
+      el('front').inert=false;
+      el('reverse').inert=true;
+      el('pickedPinyin').textContent=card[1];
+      el('pickedMeaning').textContent=card[2];
+      el('pickAction').textContent='Balik kartu';
+      el('pickStatus').textContent='';
+      const from=tile.getBoundingClientRect();
+      dialog.showModal();
+      if(dialog.animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+        const to=dialog.getBoundingClientRect();
+        const dx=from.left+from.width/2-to.left-to.width/2;
+        const dy=from.top+from.height/2-to.top-to.height/2;
+        dialog.animate([
+          {transform:'translate('+dx+'px,'+dy+'px) scale('+from.width/to.width+','+from.height/to.height+')',backgroundColor:'#782d30',color:'#ffe5ac'},
+          {transform:'none',backgroundColor:'#fff5df',color:'#491e23'}
+        ],{duration:420,easing:'cubic-bezier(.2,.75,.2,1)'});
+      }
+    };
+    board.append(tile);
+  });
+  updateBoard();
+}
+function updateBoard(){
+  el('pickedCount').textContent=completed.size+' / '+layout.length+' selesai';
+  el('resetBoard').hidden=completed.size!==layout.length;
+}
+el('pickAction').onclick=()=>{
+  if(!answered){
+    answered=true;
+    el('turn').classList.add('turned');
+    el('front').inert=true;
+    el('reverse').inert=false;
+    el('pickAction').textContent='Selesai & kembali';
+    return;
+  }
+  completed.add(chosen);
+  board.children[chosen].disabled=true;
+  updateBoard();
+  dialog.close();
+  (Array.from(board.children).find(tile=>!tile.disabled)||el('resetBoard')).focus();
+};
+el('pickClose').onclick=()=>dialog.close();
+dialog.onclose=()=>{synth?.cancel();dialog.getAnimations?.().forEach(animation=>animation.cancel())};
+el('pickSound').onclick=()=>speak(layout[chosen][0],el('pickStatus'));
+el('resetBoard').onclick=resetBoard;
+mode.onchange=()=>{
+  synth?.cancel();
+  const picking=mode.value==='pick';
+  el('practice').hidden=picking;
+  el('table').hidden=!picking;
+  if(picking&&!layout.length)resetBoard();
+};
+function classroom(active){document.body.classList.toggle('kelas',active);el('kelas').textContent=active?'Keluar mode kelas':'Mode kelas'}
+el('kelas').onclick=async()=>{const active=!document.body.classList.contains('kelas');classroom(active);try{if(active)await document.documentElement.requestFullscreen?.();else if(document.fullscreenElement)await document.exitFullscreen()}catch{}};
+document.onfullscreenchange=()=>classroom(!!document.fullscreenElement);start(cards);mode.onchange()
+</script></html>
+
+
